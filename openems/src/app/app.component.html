@@ -1,0 +1,26 @@
+<ion-app>
+  <ion-content>
+    <ion-menu side="start" contentId="content">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Menü</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item lines="full">
+            Max Mustermann<br>Max@Mustermann.de
+          </ion-item>
+          <ion-item lines="inset" (click)="presentModal()">Profil</ion-item>
+          <ion-item lines="inset">Widgets</ion-item>
+          <ion-item lines="inset">Einstellungen</ion-item>
+          <ion-item lines="inset">Hilfe</ion-item>
+          <ion-item lines="inset">Über FEMS</ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+
+    <router-outlet id="content" main></router-outlet>
+  </ion-content>
+</ion-app>

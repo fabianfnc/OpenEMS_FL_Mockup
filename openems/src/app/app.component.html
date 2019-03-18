@@ -11,11 +11,11 @@
           <ion-item lines="full">
             Max Mustermann<br>Max@Mustermann.de
           </ion-item>
-          <ion-item lines="inset" (click)="presentModal()">Profil</ion-item>
+          <ion-item lines="inset" (click)="presentModalProfile()">Profil</ion-item>
           <ion-item lines="inset">Widgets</ion-item>
           <ion-item lines="inset">Einstellungen</ion-item>
-          <ion-item lines="inset">Hilfe</ion-item>
-          <ion-item lines="inset">Über FEMS</ion-item>
+          <ion-item lines="inset" (click)="presentModalHelp()">Hilfe</ion-item>
+          <ion-item lines="inset" (click)="presentModalAbout()">Über FEMS</ion-item>
         </ion-list>
       </ion-content>
     </ion-menu>

@@ -1,18 +1,6 @@
-<!-- <ion-header>
-    <ion-toolbar>
-        <ion-buttons>
-            <button (click)="cancel()">
-                <ion-icon name="close"></ion-icon>
-            </button>
-        </ion-buttons>
-        <ion-title>title</ion-title>
-    </ion-toolbar>
-</ion-header>
- -->
-
 <ion-header>
-    <ion-toolbar color="primary">
-        <ion-title text-center>Profil</ion-title>
+    <ion-toolbar class="ion-justify-content-center" color="primary">
+        <ion-title>Profil</ion-title>
         <ion-buttons slot="end">
             <ion-button (click)="cancel()">
                 <ion-icon name="close"></ion-icon>
@@ -20,19 +8,76 @@
         </ion-buttons>
     </ion-toolbar>
 </ion-header>
-<!-- <ion-header>
-    <ion-toolbar color="success">
-        <ion-title>
-            The Title
-        </ion-title>
-        <ion-buttons slot="end">
-            <ion-button (click)="doSomething()">
-                <ion-icon slot="icon-only" name="add-circle"></ion-icon>
-            </ion-button>
-        </ion-buttons>
-    </ion-toolbar>
-</ion-header> -->
-<ion-content padding>
-    content
 
+<ion-content padding>
+    <ion-grid>
+        <ion-row class="ion-justify-content-center">
+            <ion-col>
+                <ion-button expand="block" color="primary" (click)="showChangeMail = !showChangeMail">E-Mail ändern
+                </ion-button>
+            </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center" *ngIf="showChangeMail">
+            <ion-col>
+                <ion-item>
+                    <ion-input type="text" placeholder="neue E-Mail Adresse eingeben"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="text" placeholder="neue E-Mail Adresse bestätigen"></ion-input>
+                </ion-item>
+                <ion-row padding-top class="ion-justify-content-center">
+                    <ion-button color="primary">Übernehmen</ion-button>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center">
+            <ion-col>
+                <ion-button expand="full" color="primary" (click)="showChangePassword = !showChangePassword"
+                    expand="block">
+                    Passwort ändern</ion-button>
+            </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center" *ngIf="showChangePassword">
+            <ion-col>
+                <ion-item>
+                    <ion-input type="password" placeholder="aktuelles Passwort eingeben"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="password" placeholder="neues Passwort eingeben"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="password" placeholder="neues Passwort bestätigen"></ion-input>
+                </ion-item>
+                <ion-row padding-top class="ion-justify-content-center">
+                    <ion-button color="primary">Übernehmen</ion-button>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-row class="ion-justify-content-center">
+            <ion-col>
+                <ion-item lines="none">
+                    <ul>
+                        Sprache:
+                        <select #langSelect (change)="setLanguage(langSelect.value)">
+                            <option *ngFor="let language of languages" [value]="language"
+                                [selected]="language == currentLanguage">{{
+                                        language }}</option>
+                        </select>
+                    </ul>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item lines="none">
+                    <ion-checkbox slot="start">
+                    </ion-checkbox>
+                    <ion-label translate>Debug-Mode</ion-label>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+</ion-footer>

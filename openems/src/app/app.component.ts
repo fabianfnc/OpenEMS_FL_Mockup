@@ -7,6 +7,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { MenuController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 import { ProfileModalPage } from './shared/profile-modal/profile-modal.page';
+import { HelpModalPage } from './shared/help-modal/help-modal.page';
+import { AboutModalPage } from './shared/about-modal/about-modal.page';
 
 @Component({
   selector: 'app-root',
@@ -30,10 +32,23 @@ export class AppComponent {
     });
   }
 
-  async presentModal() {
+  async presentModalProfile() {
     const modal = await this.modalController.create({
       component: ProfileModalPage,
-      componentProps: { value: 123 }
+    });
+    return await modal.present();
+  }
+
+  async presentModalAbout() {
+    const modal = await this.modalController.create({
+      component: AboutModalPage,
+    });
+    return await modal.present();
+  }
+
+  async presentModalHelp() {
+    const modal = await this.modalController.create({
+      component: HelpModalPage,
     });
     return await modal.present();
   }

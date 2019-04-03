@@ -1,27 +1,30 @@
 <ion-header>
-    <ion-toolbar class="ion-justify-content-center" color="primary">
-        <ion-title>Inbetriebnahme</ion-title>
-        <ion-buttons slot="end">
-            <ion-button (click)="cancel()">
-                <ion-icon name="close"></ion-icon>
-            </ion-button>
-        </ion-buttons>
-    </ion-toolbar>
+  <ion-toolbar class="ion-justify-content-center" color="primary">
+    <ion-title>Inbetriebnahme</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cancel()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 <ion-grid>
   <ion-row class="ion-justify-content-center">
     <ion-col size="4">
-      <ion-card class="fancy">
+      <ion-card padding>
         <ion-card-title>
-        Willkommen im Monitoring des FEMS, bevor Sie den ganzen Umfang des Monitoring nutzen können müssen Sie zunächst die Inbetriebnahme durchführen.
-        <ion-row class="spacer"></ion-row>
-        Bevor Sie beginnen, vergewissern Sie sich das alle Komponenten miteinander verbunden sind.
+          Willkommen im Monitoring des FEMS, bevor Sie den ganzen Umfang des Monitoring nutzen können müssen Sie
+          zunächst die Inbetriebnahme durchführen.
         </ion-card-title>
-        <ion-row class="spacer"></ion-row>
+        <ion-row>
+          <h1>
+          Bevor Sie beginnen, vergewissern Sie sich das alle Komponenten miteinander verbunden sind.
+        </h1>
+        </ion-row>
         <ion-row class="ion-justify-content-center">
-            <ion-button color="primary">Inbetriebnahme Starten</ion-button>
-          </ion-row>
+          <ion-button color="primary">Inbetriebnahme Starten</ion-button>
+        </ion-row>
       </ion-card>
     </ion-col>
   </ion-row>

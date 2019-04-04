@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar class="ion-justify-content-center" color="primary">
+      <ion-title>Inbetriebnahme</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+        <ion-card padding>
+          <ion-card-title>
+            Bevor wir fortfahren überprüfen Sie folgende Dinge
+          </ion-card-title>
+  <ul>
+    <li>
+        <a>Stellen Sie sicher, dass der Wechselrichter pol-treu angeschlossen ist</a>
+    </li>
+    <li>
+        <a>Es wird eine verlässliche Kommunikationsverbindung zwischen Batteriespeicher und Wechselrichter benötigt</a>
+    </li>
+    <li>
+        <a>Sollten Sie eine zusätzliche Anleitung benötigen drücken Sie auf den Link</a>
+    </li>
+</ul>
+</ion-card>
+</ion-row>
+</ion-grid>
+<ion-col size="4"class="ion-text-start" class="ion-padding-start">
+  <ion-button fill="solid" [routerLink]="['/setup-four']">Weiter</ion-button>
+  </ion-col>
+  <ion-col size="4"class="ion-text-start" class="ion-padding-start">
+  <ion-button fill="solid" [routerLink]="['/setup-two']">Zurück</ion-button>
+  </ion-col>

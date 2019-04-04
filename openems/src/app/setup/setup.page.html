@@ -11,21 +11,15 @@
 
 <ion-grid>
   <ion-row class="ion-justify-content-center">
-    <ion-col size="4">
       <ion-card padding>
         <ion-card-title>
-          Willkommen im Monitoring des FEMS, bevor Sie den ganzen Umfang des Monitoring nutzen können müssen Sie
-          zunächst die Inbetriebnahme durchführen.
+            Dieses FEMS wurde noch NICHT konfiguriert, bitte führen Sie die Inbetriebnahme durch.   
         </ion-card-title>
-        <ion-row>
-          <h1>
-          Bevor Sie beginnen, vergewissern Sie sich das alle Komponenten miteinander verbunden sind.
-        </h1>
-        </ion-row>
-        <ion-row class="ion-justify-content-center">
-          <ion-button color="primary">Inbetriebnahme Starten</ion-button>
-        </ion-row>
-      </ion-card>
-    </ion-col>
+        <ion-col size="4"class="ion-text-start" class="ion-padding-start">
+        <ion-button fill="solid" [routerLink]="['/setup-two']">Inbetriebnahme Starten</ion-button>
+      </ion-col>
+    </ion-card>
   </ion-row>
 </ion-grid>
+
+

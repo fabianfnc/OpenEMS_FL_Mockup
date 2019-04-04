@@ -1,9 +1,23 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>setupTwo</ion-title>
+<ion-toolbar class="ion-justify-content-center" color="primary">
+    <ion-title>Inbetriebnahme</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-hallo ingo
-</ion-content>
+<ion-grid>
+    <ion-row class="ion-justify-content-center">
+        <ion-card padding>
+          <ion-card-title>
+           Welches Gerät möchten Sie Inbetriebnehmen?
+          </ion-card-title>
+       <ion-button expand="block" fill="solid" [routerLink]="['/setup-three']">Pro Hybrid 10-Serie</ion-button>
+       <ion-button expand="block" fill="solid" [routerLink]="['/setup-fehler']">Commercial</ion-button>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+<ion-col size="4"class="ion-text-start" class="ion-padding-start">
+<ion-button fill="solid" [routerLink]="['/setup-three']">Weiter</ion-button>
+</ion-col>
+<ion-col size="4"class="ion-text-start" class="ion-padding-start">
+<ion-button fill="solid" [routerLink]="['/setup']">Zurück</ion-button>
+</ion-col>

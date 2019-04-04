@@ -8,6 +8,8 @@ const routes: Routes = [
   { path: 'help-modal', loadChildren: './shared/help-modal/help-modal.module#HelpModalPageModule' },
   { path: 'about-modal', loadChildren: './shared/about-modal/about-modal.module#AboutModalPageModule' },
   { path: 'setup', loadChildren: './setup/setup.module#SetupPageModule' },  { path: 'setup-two', loadChildren: './setup-two/setup-two.module#SetupTwoPageModule' },
+  { path: 'setup-three', loadChildren: './setup-three/setup-three.module#SetupThreePageModule' },
+  { path: 'setup-fehler', loadChildren: './setup-fehler/setup-fehler.module#SetupFEHLERPageModule' },
 
 
 ];

@@ -16,6 +16,9 @@ const routes: Routes = [
   { path: 'setup-six', loadChildren: './setup-six/setup-six.module#SetupSixPageModule' },
   { path: 'setup-erfolgreich1', loadChildren: './setup-erfolgreich1/setup-erfolgreich1.module#SetupErfolgreich1PageModule' },
   { path: 'setup-fehler1', loadChildren: './setup-fehler1/setup-fehler1.module#SetupFehler1PageModule' },
+  { path: 'setup-connection', loadChildren: './setup-connection/setup-connection.module#SetupConnectionPageModule' },
+  { path: 'setup-ibnprotokol', loadChildren: './setup-ibnprotokol/setup-ibnprotokol.module#SetupIbnprotokolPageModule' },
+  { path: 'ibn-finish', loadChildren: './ibn-finish/ibn-finish.module#IBNFinishPageModule' },
 
 
 ];

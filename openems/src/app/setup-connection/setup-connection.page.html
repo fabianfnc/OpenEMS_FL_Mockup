@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar class="ion-justify-content-center" color="primary">
+      <ion-title>Inbetriebnahme</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+        <ion-card padding>
+          <ion-card-title>
+            Internetverbindung fehlgeschlagen
+          </ion-card-title>
+  <ul>
+    <li>
+        <a>Es konnte keine Internetverbindung aufgebaut werden, bitte prüfen Sie Ihre Internet-Einstellungen.</a>
+    </li>
+    <li>
+        <a>Sollten Sie derzeit über kein Internet verfügen, können Sie diesen Abschnitt überspringen und mit dem Inbetriebnahmeprotokoll fortfahren.</a>
+    </li>
+    <li>
+      <a>Achtung: Ohne Internetverbindung ist keine Fernwartung seitens der FENECON GmbH möglich.</a>
+  </li>
+  </ul>
+  <ion-col size="4"class="ion-text-start" class="ion-padding-start">
+    <ion-button fill="solid" [routerLink]="['/setup-six']">Wiederholen</ion-button>
+    </ion-col>
+    <ion-col size="4"class="ion-text-start" class="ion-padding-start">
+      <ion-button fill="solid" [routerLink]="['/setup-ibnprotokol']">überspringen</ion-button>
+      </ion-col>

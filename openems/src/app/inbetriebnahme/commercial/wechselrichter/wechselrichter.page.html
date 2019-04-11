@@ -13,20 +13,22 @@
         <ion-card>
           <ion-card-content padding>
             <ion-row padding-top class="ion-justify-content-center">
-              <ion-card-title>Inbetriebnahme des Wechselrichters</ion-card-title>
+              <ion-card-title>Konfiguration des Wechselrichters&nbsp;<ion-icon name="information-circle" (click)="presentModalInfo()"></ion-icon></ion-card-title>
             </ion-row>
             <ion-row padding-top class="ion-justify-content-center">
               <ul>
                 <li>
-                  Die Inbetriebnahme des Wechselrichters war erfolgreich!
+                    Für die Inbetriebnahme des Wechselrichters schalten sie zunächst die Netzsicherung zu, das Display benötigt
+                    circa 30 Sekunden bis er angeht und der Speicher anfängt zu arbeiten.
                 </li>
                 <li>
-                  Um mit der Inbetriebnahme des FEMS fortzufahren klicken Sie bitte auf weiter
+                    Für diese Inbetriebnahme wird eine stabile Internetverbindung benötigt. Nachdem Sie alle Angaben und
+                    Einstellungen eingetragen haben drücken Sie auf Weiter, um fortzufahren.
                 </li>
               </ul>
             </ion-row>
             <ion-row padding-top class="ion-justify-content-center">
-              <ion-button (click)="presentLoading()">weiter</ion-button>
+          <ion-button [routerLink]="['/ibn/commercial/wechselrichter/settings']">Weiter</ion-button>
             </ion-row>
           </ion-card-content>
         </ion-card>

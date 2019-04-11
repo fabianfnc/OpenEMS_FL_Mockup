@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="end">
+        <ion-button [routerLink]="['/ibn/start']">IBN Neustarten
+          <ion-icon name="repeat"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-card>
+        <ion-card-content padding>
+          <ion-row padding-top class="ion-justify-content-center">
+            <ion-card-title>Konfiguration des Wechselrichters</ion-card-title>
+          </ion-row>
+          <ion-item padding-top>
+            <ion-label position="floating" type="country">Einspeise- Begrenzung in %</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+          <ion-row padding-top class="ion-justify-content-center">
+            <ion-button [routerLink]="['/ibn/commercial/wechselrichter/wechselrichtererror']">Übernehmen</ion-button>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>

@@ -31,9 +31,16 @@ const routes: Routes = [
   { path: 'ibn/prohybrid/protocol/error', loadChildren: './inbetriebnahme/prohybrid/protocol/error/error.module#ErrorPageModule' },
   { path: 'ibn/prohybrid/protocol/success', loadChildren: './inbetriebnahme/prohybrid/protocol/success/success.module#SuccessPageModule' },
   { path: 'ibn/prohybrid/protocol', loadChildren: './inbetriebnahme/prohybrid/protocol/protocol.module#ProtocolPageModule' },
-  { path: 'batterieinfo', loadChildren: './inbetriebnahme/prohybrid/batterie/batterieinfo/batterieinfo.module#BatterieinfoPageModule' },  { path: 'wechselrichterinfo', loadChildren: './inbetriebnahme/prohybrid/wechselrichter/wechselrichterinfo/wechselrichterinfo.module#WechselrichterinfoPageModule' },
+  { path: 'batterieinfo', loadChildren: './inbetriebnahme/prohybrid/batterie/batterieinfo/batterieinfo.module#BatterieinfoPageModule' },
+  { path: 'wechselrichterinfo', loadChildren: './inbetriebnahme/prohybrid/wechselrichter/wechselrichterinfo/wechselrichterinfo.module#WechselrichterinfoPageModule' },
   { path: 'protocolinfo', loadChildren: './inbetriebnahme/prohybrid/protocol/protocolinfo/protocolinfo.module#ProtocolinfoPageModule' },
-
+  { path: 'ibn/commercial/batterie/batterie', loadChildren: './inbetriebnahme/commercial/batterie/batterie.module#BatteriePageModule' },
+  { path: 'ibn/commercial/batterieinfo', loadChildren: './inbetriebnahme/commercial/batterie/batterieinfo/batterieinfo.module#BatterieinfoPageModule' },
+  { path: 'ibn/commercial/wechselrichter/wechselrichter', loadChildren: './inbetriebnahme/commercial/wechselrichter/wechselrichter.module#WechselrichterPageModule' },
+  { path: 'ibn/commercial/wechselrichter/settings', loadChildren: './inbetriebnahme/commercial/wechselrichter/settings/settings.module#SettingsPageModule' },
+  { path: 'ibn/commercial/wechselrichter/wechselrichterinfo', loadChildren: './inbetriebnahme/commercial/wechselrichter/wechselrichterinfo/wechselrichterinfo.module#WechselrichterinfoPageModule' },
+  { path: 'ibn/commercial/wechselrichter/wechselrichtererror', loadChildren: './inbetriebnahme/commercial/wechselrichter/wechselrichtererror/wechselrichtererror.module#WechselrichtererrorPageModule' },
+  { path: 'ibn/commercial/batterie/batterieerror', loadChildren: './inbetriebnahme/commercial/batterie/batterieerror/batterieerror.module#BatterieerrorPageModule' },
 ]
 
 

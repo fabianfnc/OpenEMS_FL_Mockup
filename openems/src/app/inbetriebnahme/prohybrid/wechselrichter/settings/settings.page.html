@@ -1,8 +1,12 @@
 <ion-header>
-  <ion-toolbar class="ion-justify-content-center" color="primary">
-    <ion-title text-center>Inbetriebnahme</ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="end">
+        <ion-button [routerLink]="['/ibn/start']">IBN Neustarten
+          <ion-icon name="repeat"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
 
 <ion-grid>
   <ion-row class="ion-justify-content-center">
@@ -13,7 +17,7 @@
         </ion-row>
         <ion-item padding-top>
           <ion-label position="floating" type="country">Einspeise- Begrenzung in %</ion-label>
-          <ion-input type="number"></ion-input>
+          <ion-input></ion-input>
         </ion-item>
         <ion-row padding-top class="ion-justify-content-center">
           <ion-button [routerLink]="['/ibn/prohybrid/wechselrichter/success']">Übernehmen</ion-button>

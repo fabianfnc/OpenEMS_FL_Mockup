@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="end">
+        <ion-button [routerLink]="['/ibn/start']">IBN Neustarten
+          <ion-icon name="repeat"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-card>
+          <ion-card-content padding>
+            <ion-row padding-top class="ion-justify-content-center">
+              <ion-card-title>Inbetriebnahme der Batterie</ion-card-title>
+            </ion-row>
+            <ion-row padding-top class="ion-justify-content-center">
+              <ul>
+                <li>
+                  Die Inbetriebnahme der Batterie war erfolgreich!
+                </li>
+                <li>
+                  Um mit der Inbetriebnahme des Wechselrichters fortzufahren klicken Sie bitte auf weiter
+                </li>
+              </ul>
+            </ion-row>
+            <ion-row padding-top class="ion-justify-content-center">
+              <ion-button [routerLink]="['/ibn/prohybrid/wechselrichter']">weiter</ion-button>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+    </ion-grid>

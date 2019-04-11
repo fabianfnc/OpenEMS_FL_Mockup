@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="end">
+        <ion-button [routerLink]="['/ibn/start']">IBN Neustarten
+          <ion-icon name="repeat"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-card>
+        <ion-card-content padding>
+          <ion-row padding-top class="ion-justify-content-center">
+            <ion-card-title>Internetverbindung fehlgeschlagen</ion-card-title>
+          </ion-row>
+          <ion-row padding-top class="ion-justify-content-center">
+            <ul>
+              <li>
+                  Es konnte keine Internetverbindung aufgebaut werden, bitte überprüfen Sie Ihre Internet-Einstellungen.
+              </li>
+              <li>
+                  Sollten Sie derzeit über kein Internet verfügen, können Sie diesen Abschnitt überspringen und mit dem Inbetriebnahmeprotokoll fortfahren.
+              </li>
+              <li>
+                  <ion-note>Achtung: Ohne Internetverbindung ist keine Fernwartung seitens der FENECON GmbH möglich</ion-note>
+              </li>
+            </ul>
+          </ion-row>
+          <ion-row padding-top class="ion-justify-content-center">
+              <ion-col size="3" text-center>
+                <ion-button [routerLink]="['/ibn/prohybrid/wechselrichter/success']">Wiederholen</ion-button> 
+              </ion-col>
+              <ion-col size="3" text-center>
+                <ion-button [routerLink]="['/ibn/prohybrid/protocol']">Überspringen</ion-button> 
+              </ion-col>
+            </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>

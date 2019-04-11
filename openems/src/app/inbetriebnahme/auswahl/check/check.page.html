@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/ibn/start']">IBN Neustarten
+        <ion-icon name="repeat"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-grid>
+  <ion-row class="ion-justify-content-center">
+    <ion-card>
+      <ion-card-content padding>
+        <ion-row padding-top class="ion-justify-content-center">
+          <ion-card-title>Überprüfen Sie bitte folgende Dinge bevor Sie fortfahren</ion-card-title>
+        </ion-row>
+        <ion-row padding-top class="ion-justify-content-center">
+          <ul>
+            <li>
+              Stellen Sie sicher, dass der Wechselrichter pol-treu angeschlossen ist
+            </li>
+            <li>
+              Es wird eine verlässliche Kommunikationsverbindung zwischen Batteriespeicher und Wechselrichter benötigt
+            </li>
+            <li>
+              Sollten Sie eine zusätzliche Anleitung benötigen klicken Sie auf den <a href="https://fenecon.de">Link</a>
+            </li>
+          </ul>
+        </ion-row>
+        <ion-row padding-top class="ion-justify-content-center">
+          <ion-button *ngIf="this.service.speicher == true" [routerLink]="['/ibn/prohybrid/batterie']">IBN für ProHybrid
+            starten</ion-button>
+          <ion-button *ngIf="this.service.speicher == false" [routerLink]="['/ibn/commercial']">IBN für Commercial
+            starten</ion-button>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+</ion-grid>

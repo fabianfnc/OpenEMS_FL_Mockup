@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar class="ion-justify-content-center" color="primary">
+    <ion-title text-start>Infos</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cancel()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-grid>
+  <ion-row class="ion-justify-content-center">
+    <ion-row padding-top>
+      <h3>Anzahl Batteriemodule</h3>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <p text-center>Bitte tragen Sie hier die genau Anzahl der einzelnen Batteriemodule, die Sie verwenden.</p>
+    </ion-row>
+    <ion-row>
+      <h3>Land</h3>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <p text-center>Hier wird die Kennzeichnung des Landes benötigt, in dem Sie die Batterie in Betrieb nehmen.</p>
+      <p text-center>z.B. Deutschland = DE | Österreich = AT | Schweiz = CH</p>
+    </ion-row>
+  </ion-row>
+</ion-grid>

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar class="ion-justify-content-center" color="primary">
+    <ion-title text-center>Inbetriebnahme</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-grid>
+  <ion-row class="ion-justify-content-center">
+    <ion-card>
+      <ion-card-content padding>
+        <ion-row padding-top>
+          <ion-card-title>Dieses FEMS wurde noch nicht konfiguriert, bitte führen Sie die Inbetriebnahme durch.</ion-card-title>
+        </ion-row>
+        <ion-row padding-top class="ion-justify-content-center">
+          <ion-button [routerLink]="['/ibn/auswahl']">IBN starten</ion-button>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+</ion-grid>

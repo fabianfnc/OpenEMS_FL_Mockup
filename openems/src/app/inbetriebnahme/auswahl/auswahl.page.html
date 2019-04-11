@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="end">
+        <ion-button [routerLink]="['/ibn/start']">IBN Neustarten
+          <ion-icon name="repeat"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+    </ion-toolbar>
+  </ion-header>
+
+<ion-grid>
+  <ion-row class="ion-justify-content-center">
+    <ion-card>
+      <ion-card-content padding>
+        <ion-row padding-top>
+          <ion-card-title>Welches Gerät möchten Sie in Betrieb nehmen?</ion-card-title>
+        </ion-row>
+        <ion-row padding-top class="ion-justify-content-center">
+          <ion-col size="6" text-center>
+            <ion-button (click)="goToCheckHybrid()" [routerLink]="['/ibn/auswahl/check']">ProHybrid</ion-button> 
+          </ion-col>
+          <ion-col size="6" text-center>
+            <ion-button (click)="goToCheckCommercial()" [routerLink]="['/ibn/auswahl/check']">Commercial</ion-button> 
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+</ion-grid>
